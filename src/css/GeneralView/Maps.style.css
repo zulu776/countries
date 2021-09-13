@@ -1,0 +1,36 @@
+.maps-div {
+width: 20%;
+height: 30%;
+display: flex;
+flex-direction: column;
+justify-content:flex-start;
+align-items:center;
+border: 1px solid black ;
+margin: 1%;
+background-color: darkgray;
+}
+
+.maps-img {
+    width: 60%;
+    height: 50%;
+    margin-top: 5%;
+    /* border: 0.5px solid black; */
+}
+
+.maps-p {
+    font-size: 1.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 400px) {
+ 
+.maps-div {
+  width: 30%;
+  height: 25%;
+}
+
+.maps-p {
+    font-size: 0.8rem;
+}
+
+}

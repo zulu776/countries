@@ -1,0 +1,38 @@
+.detail-div-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+.back-general {
+    width: 30%;
+    background-color: white;
+    color: white;
+    font-weight: bold   ;
+    -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    border-radius: 40% 20% 40% 20%;
+    margin: 5%;
+}
+
+.back-search {
+    width: 20%;
+    background-color: white;
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    border-radius: 20% 40% 20% 40%;
+    margin: 5%;
+}
+
+
+  

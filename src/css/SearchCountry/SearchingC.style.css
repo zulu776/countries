@@ -1,0 +1,43 @@
+.search-div {
+    height: 40vh;
+    display: flex;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-area {
+    width: 30%;
+    height: 10%;
+    border: 3px solid darkgray;
+    display: flex;  
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.submit-area {
+    width: 10%;
+    height: 12.7%;
+    border: 4px solid darkgray;
+    background-color: darkgray;
+    color: white;
+    font-size: 20px;
+}
+
+@media (min-width: 400px) {
+
+form {
+    flex-direction: column;
+}
+
+.submit-area {
+    width: 32.5%;
+    font-size: 15px;
+}
+
+}

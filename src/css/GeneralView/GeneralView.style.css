@@ -1,0 +1,45 @@
+.GeneralView-div {
+    /* height: 80vh; */
+   display: flex;
+   justify-content: center;
+   align-items: center  ;
+   flex-direction: column;
+}
+
+.flags-div {
+    width: 80%;
+    /* height: 80vh; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.LR-button {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    width: 40%;
+    background-color: black;
+    color: white;
+    font-weight: bold   ;
+    -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    border-radius: 40% 20% 40% 20%;
+}
+
+.left {
+    width: 40%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
+    border-radius: 20% 40% 20% 40%;
+}
