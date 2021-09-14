@@ -11,23 +11,24 @@ const Details = () => {
     const { name } = useParams();
     console.log(name)
     const [details, setDetails] = useState();
+    const url= `https://restcountries.eu/rest/v2/name/${name}`
 
-    const handleFetchAPI = async() => {
-        const url= `https://restcountries.eu/rest/v2/name/${name}`
-    
-        try {
-            const response = await fetch(url);
-            const result = await response.json();
-            setDetails(result[0]);
-            console.log(details)
-        } catch (error) {
-            console.log(error);
-        };
-    };
+   
 
     useEffect(() => {
+        
+        const handleFetchAPI = async() => {
+            try {
+                const response = await fetch(url);
+                const result = await response.json();
+                setDetails(result[0]);
+                
+            } catch (error) {
+                console.log(error);
+            };
+        };
         handleFetchAPI();
-    },[])
+    },[url])
 
     return (
         <>

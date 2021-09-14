@@ -16,7 +16,7 @@ const CreateDetails = props => {
     <>    
         <div className="detail-div">
             <div className="detail-box-img">
-                <img src={flag} className="detail-img"/>
+                <img src={flag} alt={name} className="detail-img"/>
             </div>
             <div className="detail-info-div">
                 <div className="box">
