@@ -12,8 +12,10 @@ const MapsSearch = props => {
             <div className="maps-div2">
                 <img src={flag} alt={name} className="maps-img2"/>
                 <p>{name}</p>
-                <button className="button-detail">
-                <Link to={`/details/${name}`}>Details!</Link>
+                <button className="detail-button">
+                <Link to={`/details/${name}`} className="detail-link">
+                    Details!
+                </Link>
                 </button>
             </div>
         </div>

@@ -11,8 +11,10 @@ const Maps = props => {
         <div className="maps-div">
             <img src={flag} alt={name} className="maps-img"/>
             <p className="maps-p">{name}</p>
-            <button className="button-detail">
-                <Link to={`/Details/${name}`}>Details!</Link>
+            <button className="detail-button">
+                <Link to={`/Details/${name}`} className="detail-link">
+                    Details!
+                </Link>
             </button>
         </div>
     </>

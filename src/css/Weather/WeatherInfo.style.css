@@ -6,26 +6,55 @@
 }
 
 .weather-box {
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    margin: 1%;
 }
 
 .weather-title{
     font-size: 25px;
+    color: white;
 }
 
 .weather-var-title {
     font-size: 30px;
     font-weight: bolder;
+    color: white;
 }
 
 .weather-title-p {
     font-size: 20px;
+    color: white;
 }
 
 .weather-var {
     font-size: 25px;
     font-weight: bold;
+    color: white;
+}
+
+@media (max-width:500px) {
+
+    .weather-title{
+        font-size: 20px;
+    }
+    
+    .weather-var-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .weather-title-p {
+        font-size: 15px;
+    }
+    
+    .weather-var {
+        font-size: 20px;
+    }
+
 }

@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import WeatherInfo from "../components/Weather/WeatherInfo"
 
+import "../css/Weather/Weather.style.css"
+
 const Weather = () => {
     const {capital} = useParams();
     console.log(capital)
@@ -34,16 +36,17 @@ const Weather = () => {
 
     return(
         <>
-        <Header />           
-        {weather && (
-           <WeatherInfo
-           capital={capital} 
-           temp={weather.main.temp}
-           humidity={weather.main.humidity}
-           wind={weather.wind.speed}
-           />
-            )}
-
+            <div className="w-container">
+                <Header />           
+                {weather && (
+                <WeatherInfo
+                capital={capital} 
+                temp={weather.main.temp}
+                humidity={weather.main.humidity}
+                wind={weather.wind.speed}
+                />
+                    )}
+            </div>
         </>
     );
 };

@@ -1,20 +1,18 @@
 .maps-div {
-width: 20%;
-height: 30%;
-display: flex;
-flex-direction: column;
-justify-content:flex-start;
-align-items:center;
-border: 1px solid black ;
-margin: 1%;
-background-color: darkgray;
+    width: 20%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    margin: 0.5%;
+    background-color: darkgray;
 }
 
 .maps-img {
     width: 60%;
     height: 50%;
     margin-top: 5%;
-    /* border: 0.5px solid black; */
 }
 
 .maps-p {
@@ -22,15 +20,23 @@ background-color: darkgray;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-@media (min-width: 400px) {
- 
-.maps-div {
-  width: 30%;
-  height: 25%;
+.button-detail {
+    width: 30%;
 }
 
-.maps-p {
-    font-size: 0.8rem;
-}
+@media (max-width: 500px) {
+ 
+    .maps-div {
+    width: 30%;
+    height: 25%;
+    }
+
+    .maps-p {
+        font-size: 0.8rem;
+    }
+
+    .button-detail {
+        width: 60%;
+    }
 
 }
