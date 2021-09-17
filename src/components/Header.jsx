@@ -6,7 +6,7 @@ import "../css/Header.style.css";
 const Header = () => {
     return(
         <header className="header">
-            <Link to="/">
+            <Link to="/" className="header-link">
             Country Details API
             </Link>
         </header>

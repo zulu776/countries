@@ -45,8 +45,10 @@ const CreateDetails = props => {
                     <p className="detail">{population2}</p>
                 </div>
             </div>
-            <button>
-                <Link to={`/Weather/${capital}`}>Weather Info</Link>
+            <button className="detail-button">
+                <Link to={`/Weather/${capital}`} className="detail-link">
+                    Weather Info
+                </Link>
             </button>
         </div>
     </>

@@ -15,8 +15,15 @@
 }
 
 .box {
-    width: 30%;
-    margin: 1%
+    width: 20%;
+    height: 20%;
+    margin: 2%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .detail-box-img {
@@ -35,4 +42,45 @@
     font-size: 1rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    color: white;
+}
+
+.detail {
+    color: white;
+
+}
+
+.detail-button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10% 40%;
+    -webkit-border-radius: 10% 40%;
+    -moz-border-radius: 10% 40%;
+    -ms-border-radius: 10% 40%;
+    -o-border-radius: 10% 40%;
+}
+
+.detail-link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+@media (max-width:450px) {
+    .detail-box-img {
+        width: 40%;
+        height: 20%;
+        margin: 5%;
+    }
+
+    .box {
+    width: 40%;
+    height: 30%;
+    margin: 3%;
+    }
+
+    .detail-button {
+        margin-top: 10%;
+    }
 }

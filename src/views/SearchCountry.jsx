@@ -5,6 +5,7 @@ import SearchingC from "../components/SearchCountry/SearchingC";
 import MapsSearch from "../components/SearchCountry/MapsSearch";
 import FetchError from "../components/FetchError";
 
+import "../css/SearchCountry/SearchCountry.style.css"
 
 const SearchCountry = () => {
 
@@ -35,24 +36,25 @@ const SearchCountry = () => {
 
     return (
         <>
-            <Header />
-            <SearchingC 
-            setCountryName={setCountryName}
-            handleSearchCountries={handleFetchAPI} 
-            />
-            {error ? (
-                <FetchError />
-            ) : (
-            countryInfo && (
-                    <MapsSearch
-                    name={countryInfo.name}
-                    flag={countryInfo.flag}
-                    key={countryInfo.id}
-                    />
-                )
-                )
-            }
-
+            <div className="search-container">
+                <Header />
+                <SearchingC 
+                setCountryName={setCountryName}
+                handleSearchCountries={handleFetchAPI} 
+                />
+                {error ? (
+                    <FetchError />
+                ) : (
+                countryInfo && (
+                        <MapsSearch
+                        name={countryInfo.name}
+                        flag={countryInfo.flag}
+                        key={countryInfo.id}
+                        />
+                    )
+                    )
+                }
+            </div>
         </>
     );
 };

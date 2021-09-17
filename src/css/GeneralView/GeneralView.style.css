@@ -1,9 +1,11 @@
 .GeneralView-div {
-    /* height: 80vh; */
+    /* height: 85vh; */
    display: flex;
    justify-content: center;
    align-items: center  ;
    flex-direction: column;
+   background-image: url("../IMG/Mapa2.jpg");
+   background-size: cover;
 }
 
 .flags-div {
@@ -42,4 +44,15 @@
     -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
     box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.41);
     border-radius: 20% 40% 20% 40%;
+}
+
+@media (max-width:450px) {
+    .GeneralView-div {
+        height: 85vh;
+    }
+
+    .LR-button {
+        margin-top: 15%;
+        width: 30%;
+    }
 }

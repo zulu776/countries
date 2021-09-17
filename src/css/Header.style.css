@@ -1,7 +1,11 @@
 .header {
     padding: 2rem;
     background-color:darkgray;
+    font-size: 2rem;
+}
+
+.header-link {
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    color: white;
 }

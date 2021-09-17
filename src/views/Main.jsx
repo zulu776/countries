@@ -11,17 +11,19 @@ const Main = () => {
     <>
         
         <Header />
-        <div className="main-div">
-            <button className="main-button">
-                <Link to="/GeneralView">
-                    View per group of 10 Countries
-                </ Link>
-            </button>
-            <button className="main-button">
-                <Link to="/SearchCountry">
-                    Search Country for Name
-                </ Link>
-            </button>
+        <div className="main-container">
+            <div className="main-div">
+                <button className="main-button">
+                    <Link to="/GeneralView" className="main-link">
+                        View per group of 10 Countries
+                    </ Link>
+                </button>
+                <button className="main-button">
+                    <Link to="/SearchCountry" className="main-link">
+                        Search Country for Name
+                    </ Link>
+                </button>
+            </div>
         </div>
     </>
     );

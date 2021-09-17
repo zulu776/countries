@@ -22,14 +22,14 @@ form {
 
 .submit-area {
     width: 10%;
-    height: 12.7%;
+    height: 12%;
     border: 4px solid darkgray;
     background-color: darkgray;
     color: white;
     font-size: 20px;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 450px) {
 
 form {
     flex-direction: column;
