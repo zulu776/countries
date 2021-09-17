@@ -1,0 +1,31 @@
+.weather-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-title{
+    font-size: 25px;
+}
+
+.weather-var-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.weather-title-p {
+    font-size: 20px;
+}
+
+.weather-var {
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -8,6 +8,7 @@ import Main from "./views/Main";
 import GeneralView from "./views/GeneralView";
 import SearchCountry  from "./views/SearchCountry";
 import Details from "./views/Details";
+import Weather from "./views/Weather";
 
 
 
@@ -30,6 +31,14 @@ const App = () => {
       </Route>
 
       <Route path="/Details/:name" exact>
+        <Details />
+      </Route>
+
+      <Route path="/Weather/:capital" exact>
+        <Weather />
+      </Route>
+
+      <Route path="*" exact>
         <Details />
       </Route>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../css/Details/CreateDetails.style.css";
 
@@ -44,6 +45,9 @@ const CreateDetails = props => {
                     <p className="detail">{population2}</p>
                 </div>
             </div>
+            <button>
+                <Link to={`/Weather/${capital}`}>Weather Info</Link>
+            </button>
         </div>
     </>
     )

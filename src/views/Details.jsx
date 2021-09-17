@@ -22,7 +22,6 @@ const Details = () => {
                 const response = await fetch(url);
                 const result = await response.json();
                 setDetails(result[0]);
-                
             } catch (error) {
                 console.log(error);
             };
