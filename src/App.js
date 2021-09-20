@@ -9,6 +9,7 @@ import GeneralView from "./views/GeneralView";
 import SearchCountry  from "./views/SearchCountry";
 import Details from "./views/Details";
 import Weather from "./views/Weather";
+import NotFound from "./views/NotFound";
 
 
 
@@ -39,7 +40,7 @@ const App = () => {
       </Route>
 
       <Route path="*" exact>
-        <Details />
+        <NotFound />
       </Route>
 
     </Switch>

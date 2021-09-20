@@ -1,0 +1,10 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+.notfound-container {
+    height: 100vh;
+    background-image: url("../IMG/Mapa2.jpg");
+    background-size: cover;
+}

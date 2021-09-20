@@ -1,5 +1,5 @@
 .GeneralView-div {
-    height: 88.5vh;
+
    display: flex;
    justify-content: center;
    align-items: center  ;
@@ -49,9 +49,6 @@
 }
 
 @media (max-width:500px) {
-    .GeneralView-div {
-        height: 100vh;
-    }
 
     .LR-button {
         margin-top: 15%;

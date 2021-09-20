@@ -1,6 +1,6 @@
 .maps-div {
-    width: 20%;
-    height: 35%;
+    width: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -21,14 +21,15 @@
 }
 
 .button-detail {
+
     width: 30%;
 }
 
 @media (max-width: 500px) {
  
     .maps-div {
-    width: 30%;
-    height: 25%;
+    width: 300px;
+    height: 250px;
     }
 
     .maps-p {
