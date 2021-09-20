@@ -12,15 +12,15 @@ const GeneralView = () => {
     const [final,setFinal] = useState(10);
     const [initial,setInitial] = useState(0);
     const [countries,setCountries] = useState([]);
-    const [loading, setLoading] = useState(false);
+    // const [loading, setLoading] = useState(false);
     const [hasMore, setHasMore] = useState(true);
-    const [totalCountries, setTotalCountries] = useState(250);
+    const totalCountries = 250;
     
 
     const isEmptyCountry = !countries || countries.length === 0;
 
     const infoScroll = async(e) => {
-        setLoading(true);
+        // setLoading(true);
         try {
             const response = await fetch("https://restcountries.eu/rest/v2/all");
             const result = await response.json();
@@ -39,7 +39,7 @@ const GeneralView = () => {
         setFinal(final + 10);
         setInitial(initial + 10);
         }; 
-        setLoading(false);
+        // setLoading(false);
     }
 
     // console.log(initial);
