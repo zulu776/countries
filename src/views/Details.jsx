@@ -47,7 +47,7 @@ const Details = () => {
                 )}
                 <div className="detail-div-div">
                     <button className="back-general">
-                        <Link to="/GeneralView">10 Countries</Link>
+                        <Link to="/GeneralView">All Countries</Link>
                     </button>
                     <button className="back-search">
                         <Link to="/SearchCountry">Search</Link>
