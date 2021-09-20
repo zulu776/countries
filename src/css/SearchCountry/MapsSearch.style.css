@@ -21,3 +21,11 @@
     height: 60%;
     margin-top: 3%;
 }
+
+@media (max-width:500px) {
+
+    .maps-div2 {
+        width: 60%;
+    }
+
+}

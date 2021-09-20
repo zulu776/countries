@@ -40,6 +40,11 @@
 
 @media (max-width:500px) {
 
+    .weather-box {
+        width: 50%;
+        margin: 5%;
+    }
+
     .weather-title{
         font-size: 20px;
     }

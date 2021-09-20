@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import Header from "../components/Header";
 import WeatherInfo from "../components/Weather/WeatherInfo"
@@ -46,6 +46,14 @@ const Weather = () => {
                 wind={weather.wind.speed}
                 />
                     )}
+                <div className="detail-div-div">
+                    <button className="back-general">
+                        <Link to="/GeneralView">10 Countries</Link>
+                    </button>
+                    <button className="back-search">
+                        <Link to="/SearchCountry">Search</Link>
+                    </button>
+                </div>
             </div>
         </>
     );

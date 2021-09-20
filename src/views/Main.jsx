@@ -15,7 +15,7 @@ const Main = () => {
             <div className="main-div">
                 <button className="main-button">
                     <Link to="/GeneralView" className="main-link">
-                        View per group of 10 Countries
+                        All Countries
                     </ Link>
                 </button>
                 <button className="main-button">
