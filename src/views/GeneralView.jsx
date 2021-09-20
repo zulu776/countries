@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 
 //Components
 import Maps from "../components/GeneralView/Maps";
@@ -12,7 +12,6 @@ const GeneralView = () => {
     const [final,setFinal] = useState(10);
     const [initial,setInitial] = useState(0);
     const [countries,setCountries] = useState([]);
-    // const [loading, setLoading] = useState(false);
     const [hasMore, setHasMore] = useState(true);
     const totalCountries = 250;
     
@@ -20,11 +19,9 @@ const GeneralView = () => {
     const isEmptyCountry = !countries || countries.length === 0;
 
     const infoScroll = async(e) => {
-        // setLoading(true);
         try {
             const response = await fetch("https://restcountries.eu/rest/v2/all");
             const result = await response.json();
-            //Guardamos results en estado
             setData(result);
         } catch(e) {
             console.log(e);
@@ -39,19 +36,7 @@ const GeneralView = () => {
         setFinal(final + 10);
         setInitial(initial + 10);
         }; 
-        // setLoading(false);
-    }
-
-    // console.log(initial);
-    // console.log(final);
-    // console.log(countries);
-   
-
-    useEffect(() => {
-        infoScroll();
-    }, []);
-
-    
+    };  
 
     return (
         
