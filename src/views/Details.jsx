@@ -12,7 +12,7 @@ const Details = () => {
     const { name } = useParams();
     console.log(name)
     const [details, setDetails] = useState();
-    const url= `https://restcountries.eu/rest/v2/name/${name}`
+    const url= `https://restcountries.com/v2/name/${name}`
 
    
 
