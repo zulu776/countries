@@ -14,7 +14,7 @@ const SearchCountry = () => {
     const [ error, setError] = useState (false);
 
     const handleFetchAPI = async(e) => {
-        const url= `https://restcountries.eu/rest/v2/name/${countryName}`
+        const url= `https://restcountries.com/v2/name/${countryName}`
         e.preventDefault();
 
         try {
